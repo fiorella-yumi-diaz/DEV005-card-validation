@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #d0d8e0;
+}
+
+/*Titulo*/
+.mainTitle{
+    font-size: 35px;
+    position: relative;
+    background-color: #202f40;
+    color: #1bc89f;
+    text-align: center;
+    padding: 25px;
+    display:inline-block;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Navegador*/
+.navegador{
+    background-color:  #d0d8e0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+
+}
+.navegador button{
+    background-color:#d0d8e0;
+    text-decoration: none;
+    margin: none;
+    padding: 10px;
+    color: #202f40;
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+
+}
+.navegador button:hover {
+    background-color: #202f4073 ;
+    color: #1bc89f;
+}
+
+/*tarjeta recuadro*/
+.cuadrodeTarjeta{
+    width: 670px;
+    height: 420px;
+    background-color: #d0d8e0;
+    border: 4px solid #202f40;
+    text-align: start;
+    margin: 38px 450px;
+}
+/*formulario*/
+.caja {
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    background-color: none;
+    padding: 30px 40px;
+    font-family: 'Varela Round', sans-serif;
+
+  }
+.form{
+    width: 100%;
+    height: 70px;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #202f40;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.form .lbl-nombre{
+    font-weight: bolder;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 3px solid #1bc89f;
+}
+.form .lbl-nombre:after{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #1bc89f;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+.text-nomb{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: #202f40;
+}
+.form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
+    transform: translateY(-150%);
+    font-size: 16px;
+    color: #1bc89f;
+}
+.form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
+    transform: translateX(0%);
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+ .form{
+    width:85%;
+}
+    }
+/*botom*/
+.botonform{
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #1bc89f;
+    color: #202f40;
+    outline: none;
+    border: none;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0px 0px 0px;
+    width: 100px;
+}
+.botonform:hover {
+    background-color: #202f40;
+    color: #1bc89f;
+}
+
+/*titulo de formulario*/
+legend {
+    color: #202f40;
+    text-shadow: 1px 1px 1px gray;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 15px;
+
+
+}
+/*cuadro de tarjeta*/
+.cuadrodeTarjeta img{
+    width: 170px;
+    position: absolute;
+    left: 930px;
+    bottom: 150px;
+}
+.resultadofalsos {
+    color: #202f40;
+    padding: 4px;
+    font-weight: bold;
+}
+
+
+
+/*pie de pagina*/
+.pageFooter {
+    position: fixed;
+    color: #000;
+    font-size: 15px;
+    bottom: 0;
+    padding: 20px;
+    text-align: center;
+    left: 570px;
+    font-weight: bold;
+    font-family: 'Varela Round', sans-serif;
+
+
+}
+
+
+
+
+
+
+.colores{
+    color: #fdf9fe;
+    color: #d0d8e0;
+    color: #1bc89f;
+    color: #202f40;
+    font-family: 'Varela Round', sans-serif;
+}
