@@ -1,23 +1,20 @@
 # **Tarjeta de Validación**
-##  **Introducción**
-Proyecto que hace una validación de tarjeta de crédito, ocupa temáticas de donaciones, resolución para equipo de escritorio.
-
 ## Índice
-* [definición](#definición)
-* [resolución del problema](#resolución-del-problema)
-* [objetivos de mi proyecto](#objetivos-de-mi-proyecto)
-* [objetivos de aprendizaje](#objetivos-de-aprendizaje)
-* [proceso del proyecto](#proceso-del-proyecto)
-* [diseño del interfaz](#diseño-del-interfaz)
-* [tecnologías de uso](#tecnologías-de-uso)
-* [vista del desktop](#vista-del-desktop)
+* [Definición](#definición)
+* [Resolución del problema](#resolución-del-problema)
+* [Objetivos de mi proyecto](#objetivos-de-mi-proyecto)
+* [Objetivos de aprendizaje](#objetivos-de-aprendizaje)
+* [Proceso del proyecto](#proceso-del-proyecto)
+* [Diseño del interfaz](#diseño-del-interfaz)
+* [Tecnologías de uso](#tecnologías-de-uso)
+* [Vista del desktop](#vista-del-desktop)
 
-## **Definición**
-En este proyecto se desarrolla una web para hacer la función de validación una tarjeta de crédito con el método luhn,   con tematica de la web *Donación para conejos*.
+
+### **Definición**
+El proyecto tiene como objetivo implementar un sistema de validación de tarjetas de crédito utilizando la metodología del algoritmo Luhn. Esta metodología permitirá verificar la autenticidad de los números de tarjeta de crédito ingresados, asegurando que cumplan con las reglas y características específicas establecidas por el algoritmo. El sistema proporcionará una respuesta inmediata sobre la validez de la tarjeta, lo que ayudará a prevenir el uso de tarjetas de crédito falsas o inválidas en transacciones financieras.
 
 
 ## **Resolución del problema** 
-***
 **Problema:** desarrollar una función para validar tarjetas de crédito y que me regrese el valor enmascarado menos las cuatro últimas cifras. [#########5263]
 [ metodo luhn](https://i.pinimg.com/564x/ae/47/d1/ae47d16014f8b870cc603ef1bc4733ae.jpg)
 ### Algoritmo de uso: *luhn* 
@@ -30,14 +27,12 @@ En este proyecto se desarrolla una web para hacer la función de validación una
  Para el enmascarado usar estos datos `.slice`(toma los 4 digitos),`.replace`(remplazar los diguitos restantes por `#`),concatenación de los dos valores.
 
 ## **Objetivos de mi proyecto**
-***
 Hacer la función de la validación de tarjeta, agregando html css js, con la resolución de escritorio. Temática de donación para los conejitos de alberges.
 ### Funciones Principales
 *	isValid = Función que valide según el algoritmo luhn.
 *	maskify = Función para enmascarar los numeros menos los 4 últimos dígitos.
 
 ## **Objetivos de aprendizaje**
-***
 ####	**HTML**
 *	Semántica de html
 
@@ -64,7 +59,6 @@ Hacer la función de la validación de tarjeta, agregando html css js, con la re
 * Despliegue con GitHub Pages
 
 ## Proceso del proyecto
-***
 ### Investigación
 1. Buscamos la informacion del algoritmo 
 2. Desarrollo del html
