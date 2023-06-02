@@ -81,12 +81,12 @@ Hacer la función de la validación de tarjeta, agregando html, css, js. Con la 
 3. diseño del logo conejo
 
 ## Diseño del interfaz
-<img src="https://github.com/fiorella-yumi/DEV005-card-validation/assets/120481207/36ca31b0-0d42-4cf1-82b2-cbd1d5810874" width="445px" >
-<img src="https://github.com/fiorella-yumi/DEV005-card-validation/assets/120481207/36ca31b0-0d42-4cf1-82b2-cbd1d5810874" width="445px" align='right'>
+<img src="https://github.com/fiorella-yumi/DEV005-card-validation/assets/120481207/36ca31b0-0d42-4cf1-82b2-cbd1d5810874" width="425px" >
+<img src="https://github.com/fiorella-yumi/DEV005-card-validation/assets/120481207/36ca31b0-0d42-4cf1-82b2-cbd1d5810874" width="425px" align='right'>
 
-<img src="https://i.pinimg.com/564x/6e/7b/08/6e7b084bfa1431307eb4e1e4c0b0ca14.jpg" width="445px" align='right' >
-<img src="https://i.pinimg.com/564x/6d/58/1a/6d581a42a0bac5f855e0d92dfdb907f0.jpg" width="435px" >
-<img src="https://github.com/fiorella-yumi/DEV005-card-validation/assets/120481207/29ecbdc5-87dd-4454-b751-769a09fdb358" width="445px">
+<img src="https://i.pinimg.com/564x/6e/7b/08/6e7b084bfa1431307eb4e1e4c0b0ca14.jpg" width="425px" align='right' >
+<img src="https://i.pinimg.com/564x/6d/58/1a/6d581a42a0bac5f855e0d92dfdb907f0.jpg" width="425px" >
+<img src="https://github.com/fiorella-yumi/DEV005-card-validation/assets/120481207/29ecbdc5-87dd-4454-b751-769a09fdb358" width="425px">
 
 
 ## **Objetivos de aprendizaje**
