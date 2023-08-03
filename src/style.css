@@ -1,73 +1,117 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 
+}
 body{
-    background-color: #d0d8e0;
+    width: 100%;
+    height: 100vh;
+    background-color: #1A1D2C;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content:space-evenly ;
 }
 
 /*Titulo*/
-.mainTitle{
-    font-size: 35px;
+.containerTitle{
     position: relative;
-    background-color: #202f40;
-    color: #1bc89f;
+    color: hsl(166, 76%, 45%);
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     display:inline-block;
     justify-content: center;
     width: 100%;
 }
-
-/*Navegador*/
-.navegador{
-    background-color:  #d0d8e0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-
+.containerTitle h1 span{
+    color: #fff;
 }
-.navegador button{
-    background-color:#d0d8e0;
-    text-decoration: none;
-    margin: none;
-    padding: 10px;
-    color: #202f40;
-    font-size: 20px;
-    border: none;
+.bo1{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    left: 17%;
+    border-radius: 100%;
+    background-image: linear-gradient(45deg, hsl(157, 34%, 48%), transparent 50%), linear-gradient(to right, hsl(166, 76%, 45%), transparent);
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 0 0;
+    transform: rotate(-85deg);
+}
+.bo2{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 40%;
+    right: 13%;
+    border-radius: 100%;
+    background-image: linear-gradient(45deg, hsl(157, 34%, 48%), transparent 50%), linear-gradient(to right, hsl(166, 76%, 45%), transparent);
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 0 0;
+    transform: rotate(-85deg) ;
+}
+/*pie de pagina*/
+.pageFooter {
+    width: 100%;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
     font-weight: bold;
-
-}
-.navegador button:hover {
-    background-color: #202f4073 ;
-    color: #1bc89f;
 }
 
 /*tarjeta recuadro*/
-.cuadrodeTarjeta{
-    width: 670px;
-    height: 420px;
-    background-color: #d0d8e0;
-    border: 4px solid #202f40;
-    text-align: start;
-    margin: 38px 450px;
+.contentBox{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*formulario*/
-.caja {
+.cuadrodeTarjeta{
+    position: relative;
+    border-radius: 30px;
+    width: 37%;
+    height: 55%;
+    background-color: rgba(255, 255, 255, 0.145); /* Color del vidrio con opacidad */
+    backdrop-filter: blur(8px); /* Aplicar el desenfoque para el efecto vidrio */
+    border-radius: 10px;
+    box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    
+  }
+  .cajasdechi{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+  }
 
+.cuadrodeTarjeta div img{
+    width:40px;
+}
+.caja {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
     background-color: none;
-    padding: 30px 40px;
+    align-items: center;
     font-family: 'Varela Round', sans-serif;
-
   }
-.form{
-    width: 100%;
+
+
+  .form{
+    margin-top: 30px;
+    width: 60%;
     height: 70px;
     max-width: 400px;
     position: relative;
@@ -77,8 +121,8 @@ body{
     width: 100%;
     height: 100%;
     background: none;
-    color: #202f40;
-    padding-top: 20px;
+    color: #fff;
+    padding-top: 10px;
     border: none;
     outline: 0px;
 }
@@ -107,10 +151,10 @@ body{
     bottom: 5px;
     left: 0;
     transition: all 0.3s ease;
-    color: #202f40;
+    color: #fff;
 }
 .form input:focus + .lbl-nombre .text-nomb,.form input:valid + .lbl-nombre .text-nomb{
-    transform: translateY(-150%);
+    transform: translateY(-200%);
     font-size: 16px;
     color: #1bc89f;
 }
@@ -121,66 +165,40 @@ body{
  .form{
     width:85%;
 }
-    }
-/*botom*/
-.botonform{
-    font-weight: bold;
-    font-size: 17px;
-    background-color: #1bc89f;
-    color: #202f40;
-    outline: none;
-    border: none;
-    display: inline-block;
-    border-radius: 5px;
-    padding: 15px;
-    margin: 10px 0px 0px 0px;
-    width: 100px;
 }
-.botonform:hover {
-    background-color: #202f40;
+/*botom*/
+.bo-resultado{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.botonform:active {
+    background-color: #1A1D2C;
     color: #1bc89f;
 }
-
-/*titulo de formulario*/
-legend {
-    color: #202f40;
-    text-shadow: 1px 1px 1px gray;
+button{
+    font-family: Arial, sans-serif;
+    background-color: #1bc89f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
     text-align: center;
-    font-weight: bolder;
-    font-size: 45px;
-    margin: 15px;
-
-
-}
-/*cuadro de tarjeta*/
-.cuadrodeTarjeta img{
-    width: 170px;
-    position: absolute;
-    left: 930px;
-    bottom: 150px;
+    width: 40%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 .resultadofalsos {
-    color: #202f40;
+    color: #ff0000;
     padding: 4px;
     font-weight: bold;
-}
+} 
 
 
 
-/*pie de pagina*/
-.pageFooter {
-    position: fixed;
-    color: #000;
-    font-size: 15px;
-    bottom: 0;
-    padding: 20px;
-    text-align: center;
-    left: 570px;
-    font-weight: bold;
-    font-family: 'Varela Round', sans-serif;
-
-
-}
 
 
 
@@ -188,7 +206,7 @@ legend {
 
 
 .colores{
-    color: #fdf9fe;
+    color: hsl(157, 34%, 48%);
     color: #d0d8e0;
     color: #1bc89f;
     color: #202f40;

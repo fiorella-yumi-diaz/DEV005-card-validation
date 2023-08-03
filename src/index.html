@@ -4,92 +4,64 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <!--Titulo de la pagina esta estatica-->
     <header class="containerTitle">
-      <h1 class="mainTitle">Donación para conejos</h1>
-      <nav class="navegador">
-        <button data-target="#vistaDonar" >Donar</button>
-        <button data-target="#historia1"  >Historia de los conejos</button>
-        <button data-target="#ConejosImg" >Conejos</button>
-      </nav>
+      <h1>Card <span>Validator</span> </h1>
     </header>
-
-    <main data-content="content" id="vistaDonar" class="contentBox">
-      <!--Donar-->
+    <!-- cajas de decorcion -->
+    <div class="bo1"></div>
+    <div class="bo2"></div>
+    <!-- seccion de contenido -->
+    <main  id="vistaDonar" class="contentBox">
       <div class="cuadrodeTarjeta">
+        
+        <!-- --------------formulario-------------- -->
         <div id="cajaVistaInputs" class="caja">
-          <legend>Tarjeta Visa</legend>
+          <div class="cajasdechi">
+            <div>
+              <img src="./img/chip.png">
+            </div>
+          </div>
+
           <form class="form">
-          <input type="text" id="inputValorNombre" required>
+          <input type="text" id="inputValorNombre" autocomplete="off" required>
           <label class="lbl-nombre">
             <span class="text-nomb">Nombre</span>
           </label>
           </form>
           <br>
           <form class="form">
-            <input type="text" id="inputValorCard" required>
+            <input type="text" id="inputValorCard" autocomplete="off" required>
             <label class="lbl-nombre">
               <span class="text-nomb">Numero de tarjeta</span>
             </label>
-            </form>
+          </form>
             <br>
-          <button id="botonValidar" type="button" class="botonform">Pagar</button>
-
-          <p class="resultadofalsos" id="resultadoFalso"></p>
+            <div class="bo-resultado">
+              <button id="botonValidar" type="button" class="botonform">Pagar</button>
+              <p class="resultadofalsos" id="resultadoFalso"></p>
+            </div>
+          
         </div>
-        
+
+        <!-- caja resultado -->
         <div id="cajaResultadoVista" class="resultadoVista">
           <h4 id="tituloValorVerdadero"></h4>
           <p id="ouputNombre"></p>
           <p id="ouputCard"></p>
         </div> 
-        
-        <img src="./img/creditcard.png" alt="logo conejo">
+  
       </div>
     </main>
-
-     <!-- Historia 
-      <section data-content="content" id="vistaHistoria" class="historia1">
-        <h3>Historia de los conejos</h3>
-        <p>Los primeros conejos silvestres de Europa evolucionaron durante 4.000 años en la Península Ibérica (la zona sombreada en rojo en el mapa de la derecha). Los comerciantes fenicios se refierían a la península como 'I-shephan-im', que significa 'tierra de conejos'. Esto se tradujo como 'Hispania' o, como se conoce actualmente, España. El nombre científico del conejo es \'Oryctolagus cuniculus\', parece muy complicado pero simplemente significa 'liebre que excava pasajes subterráneos'.</p>
-        <br>
-        <p>La vida era tranquila para los conejos hasta que los romanos llegaron a España durante la Segunda Guerra Púnica en el siglo II a. C. Desafortunadamente para los conejos, los romanos rápidamente tuvieron la idea de criarlos para prácticar cunicultura. En un principio los criaban en zonas valladas con matorrales, pero utilizando las primeras tácticas de escape de prisión conocidas, los conejos se escapaban excavando túneles. No pasó mucho tiempo hasta que se decidió que cada recinto de conejos fuera vigilado como el propio palacio del emperador. ¿Crees que este uso poco prudente de centuriones podría haber contribuido, en cierta manera, a la caída del Imperio Romano?</p>
-        <p>El aumento del comercio entre los países por mar y por tierra ayudó a introducir conejos en todos los continentes, excepto en la Antártida. Por aquel entonces la gente estaba mejorando la forma de cultivar, se cultivaba cada vez más tierra y los campos estaban llenos de alimentos. De este modo se ofrecía involuntariamente a los conejos un hábitat idea donde vivir. Esto, combinado con su famosa tasa de reproducción rápida, hizo que establecieron rápidamente dondequiera que iban.</p>
-        <p>Se cree que los conejos se empezaron a domesticar cuando los monjes medievales los comenzaron a criar en jaulas para comer. Los conejos recién nacidos, gazapos, no se consideraban carne y se permitían comer durante la Cuaresma. Los monjes, que era muy aplicados, no tardaron en estudiar las razas y en seleccionarlas para obtener nuevos colores de pelaje.</p>
-        <p>La revolución industrial provocó que muchas personas se desplazaran del campo a la ciudad, llevándose también a sus conejos consigo. Un par de conejos pueden producir hasta 90 kilos de carne al año, lo cual era una fuente muy importante de alimento. Pero en el siglo XIX las cosas empezaron a mejorar para los conejos, los victorianos comenzaron a criarlos para llevarlos a exhibiciones y competiciones. Desde entonces en Reino Unido se dejó más o menos de comer conejo, aunque en otros muchos países siguen siendo parte regular de la dieta.</p>
-        <h3>datos curiosos</h3>
-        <ul>
-          <li><b>No son roedores, sino lagomorfos:</b></li>
-          <li><b>Se comen sus propias heces (y es bueno para ellos):</b></li>
-          <li><b>Ronronean como los gatos:</b></li>
-          <li><b>Sus dientes nunca paran de crecer</b></li>
-          <li><b>Nada escapa a su visión</b></li>
-        </ul>
-      </section>
-     -->
-    <!--conejos
-      <section data-content="content" id="vistaConejos" class="ConejosImg">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-      </section>
-    -->
-    
 
     <!--pie de pagina estatica-->
     <footer class="pageFooter">
       <strong>@Developed by Fiorella Diana Diaz Mayta - 2023 :3</strong>
-    </footer>
+    </footer> 
 
     <script src="index.js" type="module"></script>
   </body>
