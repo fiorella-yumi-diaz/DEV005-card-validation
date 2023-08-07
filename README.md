@@ -62,7 +62,7 @@ El proyecto tiene como objetivo implementar un sistema de validación de tarjeta
 ```
 
 ## **Objetivos de mi proyecto**
-Hacer la función de la validación de tarjeta, agregando html, css, js. Con la resolución de escritorio. Temática de donación para los conejitos de alberges.
+Hacer la función de la validación de tarjeta, agregando html, css, js. Con la resolución de escritorio.
 ### Funciones Principales
 *	isValid = Función que valide según el algoritmo luhn.
 *	maskify = Función para enmascarar los numeros menos los 4 últimos dígitos.
@@ -75,10 +75,6 @@ Hacer la función de la validación de tarjeta, agregando html, css, js. Con la 
 6. Pasar un test 
 7. Redactar en MD
 8. Subir a GitHub
-### boceto de la pagina prueba
-1. tener un nav de inicio, pago, historia.
-2. colores de uso de diseño frio
-3. diseño del logo conejo
 
 ## Diseño del interfaz
 <img src="https://i.pinimg.com/750x/5f/0b/86/5f0b865a47f4e37f7dcb22d0254c7020.jpg" width="445px">
