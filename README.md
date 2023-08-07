@@ -78,6 +78,8 @@ Hacer la función de la validación de tarjeta, agregando html, css, js. Con la 
 
 ## Diseño del interfaz
 <img src="https://i.pinimg.com/750x/5f/0b/86/5f0b865a47f4e37f7dcb22d0254c7020.jpg" width="445px">
+
+
 ## **Objetivos de aprendizaje**
 ####	**HTML**
 *	Semántica de html
