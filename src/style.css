@@ -80,6 +80,7 @@ body{
 /*formulario*/
 .cuadrodeTarjeta{
     position: relative;
+    overflow: hidden;
     border-radius: 30px;
     width: 37%;
     height: 55%;
@@ -88,7 +89,6 @@ body{
     border-radius: 10px;
     box-shadow: 1 1 10px rgba(0, 0, 0, 0.1);
     border: 1px solid #fff;
-    
   }
   .cajasdechi{
     position: absolute;
@@ -161,11 +161,6 @@ body{
 .form input:focus + .lbl-nombre:after, .form input:valid + .lbl-nombre:after{
     transform: translateX(0%);
 }
-@media only screen and (min-width:320px) and (max-width:768px){
- .form{
-    width:85%;
-}
-}
 /*botom*/
 .bo-resultado{
     padding-top: 10px;
@@ -196,15 +191,114 @@ button{
     padding: 4px;
     font-weight: bold;
 } 
+.cuadrodeTarjeta .resultadoVista {
+    height: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    /* Propiedades de Flexbox */
+    display: flex !important;
+    flex-direction: column; /* Orientación de los elementos internos */
+    justify-content: center; /* Alineación vertical */
+
+  }
+  .resultadoVista p {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .resultadoVista h4{
+    color: #1bc89f;
+    font-size: 30px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .resultadoVista .cardNumber{
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #000;
+  }
+  
+
+  @media screen and (min-width: 992px) and (max-width: 1023px) { 
+    .cuadrodeTarjeta{
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        width: 37%;
+        height: 55%;
+      }
+    .bo1{
+        position: absolute;
+        top: 10%;
+        left: 17%;
+        transform: rotate(-85deg);
+    }
+    .bo2{
+        position: absolute;
+        top: 40%;
+        right: 13%;
+        transform: rotate(-85deg) ;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) { 
+    .bo1{
+        position: absolute;
+        top: 10%;
+        left: 17%;
+        transform: rotate(-85deg);
+    }
+    .bo2{
+        position: absolute;
+        top: 40%;
+        right: 13%;
+        transform: rotate(-85deg) ;
+    }
+   }
 
 
+  @media (max-width: 480px) {
+    .bo1{
+        position: absolute;
+        top: 10%;
+        left: 17%;
+        transform: rotate(-85deg);
+    }
+    .bo2{
+        position: absolute;
+        top: 40%;
+        right: 13%;
+        transform: rotate(-85deg) ;
+    }
+  }
 
-
-
-
-
-
-
+  @media (max-width: 300px) {
+    .cuadrodeTarjeta{
+        position: relative;
+        overflow: hidden;
+        border-radius: 30px;
+        width: 40%;
+        height: 55%;
+      }
+    .bo1{
+        position: absolute;
+        top: 10%;
+        width: 30%;
+        height: 30%;
+        left: 17%;
+        transform: rotate(-85deg);
+    }
+    .bo2{
+        position: absolute;
+        top: 40%;
+        right: 13%;
+        transform: rotate(-85deg) ;
+    }
+  }
 .colores{
     color: hsl(157, 34%, 48%);
     color: #d0d8e0;

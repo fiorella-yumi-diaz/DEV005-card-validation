@@ -12,9 +12,11 @@
     <header class="containerTitle">
       <h1>Card <span>Validator</span> </h1>
     </header>
+
     <!-- cajas de decorcion -->
     <div class="bo1"></div>
     <div class="bo2"></div>
+
     <!-- seccion de contenido -->
     <main  id="vistaDonar" class="contentBox">
       <div class="cuadrodeTarjeta">
@@ -30,14 +32,14 @@
           <form class="form">
           <input type="text" id="inputValorNombre" autocomplete="off" required>
           <label class="lbl-nombre">
-            <span class="text-nomb">Nombre</span>
+            <span class="text-nomb">Name</span>
           </label>
           </form>
           <br>
           <form class="form">
             <input type="text" id="inputValorCard" autocomplete="off" required>
             <label class="lbl-nombre">
-              <span class="text-nomb">Numero de tarjeta</span>
+              <span class="text-nomb">Card number</span>
             </label>
           </form>
             <br>
@@ -52,7 +54,8 @@
         <div id="cajaResultadoVista" class="resultadoVista">
           <h4 id="tituloValorVerdadero"></h4>
           <p id="ouputNombre"></p>
-          <p id="ouputCard"></p>
+          <p id="ouputCard" class="cardNumber"></p>
+          <button id="btn-return">Return</button>
         </div> 
   
       </div>
