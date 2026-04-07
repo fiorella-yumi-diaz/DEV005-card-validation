@@ -3,10 +3,13 @@ function isEmptyOrNull(str) {
   return str.trim().length === 0 || str === null  
 }
 
+
+
 // Verificar que los input sean solo numeros
 function isNumber(str) {
   return !isNaN(str)
 }
+
 
 // algoritmo lunh 
 function isCardValid(cardNumber) {
@@ -59,8 +62,11 @@ const validator = {
     }
     return true
   },
+  
   maskify : function(cardNumber) {
     return maskify(cardNumber)
   }
 };
 export default validator;
+
+

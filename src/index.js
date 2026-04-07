@@ -13,6 +13,8 @@ const valorResultadoCard =  document.getElementById('ouputCard');
 const btnReturn =  document.getElementById("btn-return");
 const formulario = document.getElementsByClassName("form");
 
+
+
 // Resultado correcto de la tarjeta
 function mostrarExitoso(nombre, cardMaskify) { 
   ValorVistaValidar.style.display = "none";
@@ -40,14 +42,17 @@ function mostrarValidacionCard() {
   }
 }
 valorBotonValidar.addEventListener('click',mostrarValidacionCard);
+
+
+
+
+
+
+
 btnReturn.addEventListener('click', function name(event) {
   event.preventDefault();
   ValorVistaValidar.style.display = "flex";
   valorVistaResultado.style.display = "none";
   console.log("PRUEBA");
-
-
-  
-  
 
 })
